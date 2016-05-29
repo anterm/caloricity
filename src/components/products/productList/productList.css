@@ -1,0 +1,27 @@
+.table {
+	width: 100%;
+	text-align: center;
+	//background-color: #fff;
+
+	th {
+		font-weight: normal;
+		text-transform: uppercase;
+		color: #9EA0A3;
+		padding: 10px;
+		border-top: none;
+	}
+
+	td, th {
+		padding: 5px 0;
+		border: 1px dashed rgba(12, 88, 147, 0.05);
+		&:first-child {
+			text-align: left;
+			border-left: none;
+		}
+
+		&:last-child {
+			border-right: none;
+			text-align: right;
+		}
+	}
+}

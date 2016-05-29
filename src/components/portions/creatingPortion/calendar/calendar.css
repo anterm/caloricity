@@ -1,0 +1,38 @@
+@value bootstrap: '../../../bootstrap.css';
+
+.block {
+	background-color: rgb(79, 157, 217);
+	color: rgba(12, 88, 147, 0.76)
+}
+
+.container {
+	composes: container from bootstrap;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.component {
+	display: inline-block;
+}
+
+.addPortion {
+	float: right;
+	background-color: #0C5893;
+	color: #EFF6FC;
+	border: 1px solid rgb(13, 72, 118);
+	box-shadow: 1px 1px 1px #0D4169;
+	font-size: 12px;
+	text-transform: uppercase;
+	border-radius: 2px;
+	padding: 5px 10px;
+	
+	color: white;
+	background-color: #D17441;
+	border: 1px solid rgb(215, 111, 55);
+	box-shadow: 0 0 5px #78310A;
+
+	&:hover {
+		background-color: #BE5626;
+    border: 1px solid #C45623;
+	}
+}

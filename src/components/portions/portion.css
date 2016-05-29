@@ -1,0 +1,23 @@
+@value bootstrap: '../bootstrap.css';
+
+.fullWidthBlock {
+
+}
+
+.block {
+
+}
+
+.allTime {
+	padding: 10px 0;
+	background-color: #efefef;
+}
+
+.daily {
+	padding: 10px 0;
+	background-color: #cdcdcd;
+}
+
+.container {
+	composes: container from bootstrap;
+}

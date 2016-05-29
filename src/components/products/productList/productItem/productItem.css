@@ -1,0 +1,43 @@
+@value icons: '../../../icomoon.css';
+
+.name {
+	color: #636161;
+	font-weight: bold;
+	text-align: left;
+	max-width: 100px;
+}
+
+.protein {
+	color: green;
+}
+
+.fat {
+	color: #FF7504;
+}
+
+.ch {
+	color: #C548D6;
+}
+
+.caloricity {
+	color: rgb(79, 157, 217);
+} 
+
+.link {
+	font-size: 20px;
+	color: rgba(199, 73, 3, 0.76);
+
+	&:hover {
+		color: #BE5626;
+	}
+
+	&_pencil {
+		composes: pencil from icons;
+		composes: link;
+	}
+
+	&_delete {
+		composes: delete from icons;
+		composes: link;
+	}
+}

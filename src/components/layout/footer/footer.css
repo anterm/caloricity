@@ -1,0 +1,28 @@
+@value bootstrap: '../../bootstrap.css';
+
+.block {
+	background-color: rgba(0,0,0, 0.1);
+	color: #555;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+} 
+
+.container {
+	composes: container from bootstrap;
+	text-align: right;
+	height: 100%;
+	position: relative;
+}
+
+.copyright {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	color: #707070;
+
+}
+

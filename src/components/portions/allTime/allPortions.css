@@ -1,0 +1,122 @@
+@value bootstrap: '../../bootstrap.css';
+@value icons: '../../icomoon.css';
+
+.block {
+	background-color: rgb(79, 157, 217);
+	color: #fff;
+	color: #0C5893;
+	//padding: 20px 0 4px;
+	border-bottom: 2px solid #196AA8;
+}
+
+.container {
+	composes: container from bootstrap;
+}
+
+.row {
+	composes: row from bootstrap;
+}
+
+.col12 {
+	composes: col-sm-12 from bootstrap;
+}
+
+.title {
+	padding: 15px 0;
+	margin-bottom: 10px;
+}
+
+.icon_chevron {
+	composes: chevron-right from icons;
+	padding: 3px;
+	background-color: #4F9DD9;
+	border-radius: 50%;
+	font-size: 16px;
+	margin-right: 5px;
+	border: 1px solid rgba(255, 255, 255, 0.28);
+	vertical-align: middle;
+}
+
+
+
+.link {
+	color: rgba(255, 255, 255, 0.55);
+	line-height: 20px;
+	margin-right: 10px;
+	
+	&:focus {
+		color: rgba(255, 255, 255, 0.55);
+	}
+
+	&_text {
+		vertical-align: middle;
+		text-transform: uppercase;
+		font-size: 11px;
+	}
+}
+
+.radio_buttons {
+	display: inline-block;
+	
+	input {
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+	
+	label {
+		display: inline-block;
+		padding: 5px 10px;
+		margin-right: 10px;
+		background-color: #4891CA;
+		border: 1px solid #327EBA;
+		color: white;
+		cursor: pointer;
+		font-size: 12px;
+		text-transform: lowercase;
+		border-radius: 3px;
+		
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.9);
+			color: #2485D0;
+		}
+	}
+	
+	
+	input:checked + label {
+		background-color: #2485D0;
+		color: #CFEAFF;
+	}
+}
+
+
+
+.button {
+	padding: 5px 10px;
+	margin-left: 10px;
+	border: 1px solid rgba(20, 118, 179, 0.89);
+	border-radius: 4px;
+	float: right;
+	box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.28);
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.9);
+	background-color: #4891CA;
+	
+	&:hover { 
+		background-color: rgba(255, 255, 255, 0.9);
+		color: #2485D0;
+	}
+}
+
+.icon {
+	&_plus {
+		composes: plus from icons;
+	}
+
+	&_pencil {
+		composes: pencil from icons;
+		margin-right: 4px;
+	}
+
+}
+

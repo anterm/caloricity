@@ -1,0 +1,125 @@
+ html, body {
+  font-family: "PT Sans";
+  font-family: "Ubuntu";
+  height: 100%;
+  background-color: white;
+}
+
+#content {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 100px;
+  background-color: white;
+}
+
+a {
+  color: #777;
+  text-decoration: none;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: #cdcdcd;
+}
+
+table td {
+  padding-left: 0 !important;
+}
+
+.hidden { 
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.notVisible {
+  visibility: hidden !important;
+}
+.rotate90deg {
+  transform: rotate(90deg);
+}
+/*
+.editPopup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  margin-left: 0px !important;
+  font-size: 24px;
+  border-radius: 50%;
+  padding: 2px;
+  vertical-align: middle;
+}
+
+.editPopup .baseBlock {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+
+  background-color: white;
+
+}
+
+.editPopup .shadowBlock {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid red;
+}
+
+.pending, .rejected {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  border: 1px solid red;
+}
+*/
+.highcharts-tooltip {
+  font-size: 11px;
+}
+
+.highcharts-tooltip > span {
+  background: rgba(165, 216, 128, 0.98);
+  border: 1px solid #6B9B4B;
+  
+  background: rgba(34, 35, 35, 0.7);
+  border: 1px solid #222323;
+  box-shadow: 0 0 8px #171616;
+  font-size: 11px;
+  border-radius: 3px;
+}
+
+.highcharts-tooltip > span > span {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8px 15px;
+}
+
+.highcharts-tooltip > span > span:nth-of-type(2) {
+    color: rgba(255,255,255, 0.9);
+}
+
+.highcharts-tooltip > span > span:nth-of-type(1) {
+    background: #D0246A;
+    border-radius: 3px 0 0 3px;
+    color: white;
+    font-size: 16px;
+    text-shadow: 0 0 4px black;
+}

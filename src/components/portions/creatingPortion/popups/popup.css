@@ -1,0 +1,150 @@
+@value icons: '../../../icomoon.css';
+@value bootstrap: '../../../bootstrap.css';
+@value padding-item: 8px 20px;
+
+.wrapper {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.7);
+	z-index: 10000;
+}
+
+.main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -75%);
+	border-radius: 4px;
+	background-color: #efefef;
+	border-radius: 4px;
+}
+
+.item {
+	padding: padding-item;
+	border-bottom: 1px solid #D9D7D7;
+	border-top: 1px solid white;
+}
+
+.label {
+	width: 81px;
+	display: inline-block;
+	padding: 5px 10px 5px 0;
+	color: #777D6F;
+}
+
+input {
+	padding: 5px;
+	border: 1px solid #D5D5D5;
+	background-color: white;
+	color: #353232;
+	border-radius: 3px;
+}
+
+.button {
+	padding: padding-item;
+	border-radius: 3px;
+
+	&:hover {
+		box-shadow: 0 0 5px rgb(83, 34, 6);
+		border: 1px solid rgb(178, 92, 45);
+		background-color: rgba(199, 73, 3, 0.76);
+		color: white;
+	}
+
+	&_success {
+		composes: button;
+		color: white;
+		background-color: #2E7CCC;
+    border: 1px solid #1A5898;
+    box-shadow: 0 0 5px #02172C;
+	}
+
+	&_cancel {
+		composes: button;
+		background-color: #efefef;
+		border: 1px solid #efefef;
+		color: #626360;
+		box-shadow: 0 0 5px #676866;
+		margin-right: 10px;
+	}
+
+	&_change {
+		composes: button_success;
+		display: block;
+		width: 100%;
+	}
+
+}
+
+.title {
+	composes: clearfix from bootstrap;
+	line-height: 29px;
+	border-bottom: 1px solid #cdcdcd;
+	padding: padding-item;
+	background-color: rgb(79, 157, 217);
+	color: white;
+	border-radius: 4px 4px 0 0;
+
+	&_text {
+		display: inline-block;
+	}
+}
+
+.close_icon {
+	composes: times from icons;
+	float: right;
+	color: rgb(64, 114, 166);
+	line-height: inherit;
+	font-size: 24px;
+	cursor: pointer;
+	margin-right: -5px;
+
+	&:hover {
+		color: rgba(255, 255, 255, 0.75);
+	}
+}
+
+.footer {
+	composes: clearfix from bootstrap;
+	padding: 10px 20px;
+	text-align: right;
+}
+
+.spinner {
+	composes: clearfix from bootstrap;
+	padding: 19px 20px 18px;
+	text-align: center;
+}
+
+.caution {
+	padding: 17px 20px;
+	font-size: 19px;
+	color: #4E5255;
+}
+
+.checkbox_block {
+	padding: padding-item;
+	text-align: right;
+
+	span {
+		color: #666;
+		vertical-align: middle;
+		margin-left: 4px;
+	}
+
+	label {
+		cursor: pointer;
+	}
+
+	input {
+		vertical-align: middle;
+	}
+
+	& + .item {
+		border-top: none;
+		padding-top: 0;
+	}
+}

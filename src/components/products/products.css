@@ -1,0 +1,35 @@
+@value bootstrap: '../bootstrap.css';
+
+.block {
+
+}
+
+.container {
+	composes: container from bootstrap;
+}
+
+.row {
+	composes: row from bootstrap;
+}
+
+.left_block {
+	composes: col-sm-8 from bootstrap;
+}
+
+.title {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.8rem;
+}
+
+.link_new_product {
+	margin-top: 20px;
+	display: inline-block;
+	color: rgba(199, 73, 3, 0.76);
+
+	&:hover {
+		color: #BE5626;
+	}
+}

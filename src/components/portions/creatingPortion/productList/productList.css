@@ -1,0 +1,56 @@
+@value icons: '../../../icomoon.css';
+.main {
+	padding-left: 26px;
+}
+
+.table {
+	width: 100%;
+	text-align: center;
+	//background-color: #fff;
+
+	th {
+		font-weight: normal;
+		text-transform: uppercase;
+		color: rgb(157, 178, 196);
+		padding: 10px;
+		border-top: none;
+	}
+
+	td, th {
+		padding: 5px 0;
+		border: 1px dashed rgba(12, 88, 147, 0.05);
+		&:first-child {
+			text-align: left;
+			border-left: none;
+		}
+
+		&:last-child {
+			border-right: none;
+			text-align: right;
+		}
+	}
+}
+
+.link {
+	font-size: 20px;
+	color: rgba(199, 73, 3, 0.76);
+
+	&:hover {
+		color: #BE5626;
+		cursor: pointer;
+	}
+
+	&_pencil {
+		composes: pencil from icons;
+		composes: link;
+	}
+
+	&_delete {
+		composes: delete from icons;
+		composes: link;
+	}
+}
+
+.name {
+	font-weight: bold;
+}

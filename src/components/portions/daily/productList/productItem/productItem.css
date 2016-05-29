@@ -1,0 +1,27 @@
+
+.name {
+	color: #636161;
+	font-weight: bold;
+	text-align: left;
+	max-width: 100px;
+}
+
+.protein {
+	color: green;
+}
+
+.fat {
+	color: #FF7504;
+}
+
+.ch {
+	color: #C548D6;
+}
+
+.caloricity {
+	color: rgb(79, 157, 217);
+}
+
+.tr {
+
+}

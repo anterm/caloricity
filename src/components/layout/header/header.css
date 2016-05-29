@@ -1,0 +1,12 @@
+@value bootstrap: "../../bootstrap.css";
+
+.block {
+	background-color: #5297CC;
+	background-color: rgb(12, 88, 147);
+	background-color: #2485d0;
+	padding: 20px 0;
+}
+
+.container {
+	composes: container from bootstrap;
+}

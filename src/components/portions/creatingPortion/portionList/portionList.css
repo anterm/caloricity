@@ -1,0 +1,17 @@
+@value bootstrap: '../../../bootstrap.css';
+
+.block {
+
+}
+
+.container {
+	composes: container from bootstrap;
+}
+
+.link {
+	&_new_portion {
+		padding: 25px 0 25px 5px;
+		display: inline-block;
+		color: #069;
+	}
+}

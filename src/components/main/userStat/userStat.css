@@ -1,0 +1,77 @@
+.block {
+  min-height: 210px;
+  text-align: center;
+}
+
+.main {
+  display: inline-block;
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 5px;
+}
+
+
+.title {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.46);
+  text-transform: uppercase;
+  background-color: white;
+  margin-bottom: 25px;
+  
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.days {
+  text-align: center;
+  color: rgb(17, 18, 18);
+  font-size: 21px;
+  padding: 10px 10px 20px;
+  
+  &_value {
+    color: white;
+    font-weight: bold;
+    background-color: rgba(38, 102, 152, 0.81);
+    margin: 0 11px;
+    text-shadow: 0 0 5px #333;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 17px;
+  }
+}
+
+.name, .value {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+
+.name {
+  color: #E6E6E6;
+  text-transform: uppercase;
+  background-color: #2485D0;
+  border-radius: 3px;
+  border-radius: 3px 0 0 3px;
+  font-size: 11px;
+  padding: 12px;
+  display: inline-block;
+}
+
+.value { 
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.86);
+  & > span {
+    padding: 5px 10px;
+    display: inline-block;
+  }
+}
+
+.item {
+  background-color: rgb(38, 102, 152);
+  text-align: left;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}

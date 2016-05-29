@@ -1,0 +1,25 @@
+@value bootstrap: "../../bootstrap.css";
+
+.block {
+	background-color: #fff;
+	border-top: 2px solid #2485D0;
+	color: #666;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.container {
+	composes: container from bootstrap;
+}
+
+.row {
+	composes: row from bootstrap;
+	position: relative;
+}
+
+.header {
+	color: #666;
+	border-bottom: 1px solid #cdcdcd;
+	padding: 15px 0;
+	margin-bottom: 15px;
+}

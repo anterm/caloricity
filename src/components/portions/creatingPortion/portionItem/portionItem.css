@@ -1,0 +1,109 @@
+@value bootstrap: '../../../bootstrap.css';
+@value icons: '../../../icomoon.css';
+@value link-hover-color: #BE5626;
+
+.main {
+	border-bottom: 1px solid #EFF6FC;
+	&:hover {
+		background-color: #ababab;
+		color: #069;
+	}
+}
+
+.container {
+	composes: container from bootstrap;
+}
+
+.title {
+	//background-color: #cdcdcd;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	cursor: pointer;
+	border-bottom: 1px solid #efefef;
+	color: #0C5893;
+
+	&:hover {
+		background-color: rgba(79, 157, 217, 0.36);
+		color: #069;
+	}
+
+	&_time {
+		vertical-align: middle;
+		margin-right: 6px;
+		//color: rgb(92, 92, 92);
+		font-weight: bold;
+	}
+
+	&_value {
+		vertical-align: middle;
+		margin-right: 5px;
+		color: rgba(12, 88, 147, 0.40);
+	}
+
+	&_name {
+		vertical-align: middle;
+		margin-right: 5px;
+		//color: rgba(0, 0, 0, 0.36);
+	}
+}
+
+
+.content {
+	display: none;
+	background-color: rgba(79, 157, 217, 0.09);
+}
+
+.icon {
+	font-size: 24px;
+
+	&_chevron {
+		composes: chevron-right from icons;
+		composes: icon;
+		vertical-align: middle;
+		//border: 1px solid #C3DDF2;
+		border-radius: 50%;
+		margin-right: 3px;
+		margin-left: -2px;
+		//padding: 2px;
+		font-size: 24px;
+	}
+
+	&_plus {
+		composes: plus from icons;
+		composes: icon;
+		font-size: 15px;
+		display: none;
+	}
+
+	&_delete {
+		composes: times from icons;
+		composes: icon;
+		font-size: 15px;
+		display: none;
+	}	
+}
+
+.link {
+	color: rgba(209, 113, 61, 0.78);
+	margin-right: 15px;
+	text-transform: uppercase;
+	font-size: 11px;
+
+	&:hover {
+		color: link-hover-color;
+	}
+
+	span {
+		//color: rgba(126, 126, 126, 0.51);
+		vertical-align: middle;
+	}
+}
+
+.controls {
+	padding: 15px 0 15px 25px;
+}
+
+.grayBG {
+	background-color: rgba(79, 157, 217, 0.20);
+	border-top: 3px solid rgba(12, 88, 147, 0.21);
+}

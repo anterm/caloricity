@@ -1,0 +1,27 @@
+import React from 'react'
+import { render } from 'react-dom'
+
+import { Router, match } from 'react-router'
+import { browserHistory as history } from 'react-router'
+
+import { Provider } from 'react-redux'
+import configureStore from './store'
+
+
+const initialState = window.__INITIAL_STATE__
+const store = configureStore(initialState)
+
+const routes = require('./routes')(
+	() => store.getState().auth.isLogged
+)
+
+match({ routes, location, history}, (error, redirectLocation, renderProps) => {
+	render(
+		<Provider store={store}>
+			<Router {...renderProps}>
+				{routes}
+			</Router>
+	  </Provider>,
+		document.getElementById('content')
+	)
+})

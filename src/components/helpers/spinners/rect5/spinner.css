@@ -1,0 +1,63 @@
+.block {
+  margin: 0 auto;
+  text-align: center;
+  color: #920000;
+}
+
+.block > div {
+  background-color: currentColor;
+  height: 40px;
+  width: 6px;
+  margin-left: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.block .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.block .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.block .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.block .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+
+.text {
+  font-style: italic;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 15px;
+  vertical-align: middle;
+  color: rgb(156, 77, 21);
+  color: currentColor;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
